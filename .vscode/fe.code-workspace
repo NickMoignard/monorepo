@@ -1,0 +1,25 @@
+{
+    "folders": [
+        {
+            "path": "../apps/native"
+        },
+        {
+            "path": "../apps/web"
+        },
+        {
+            "path": "../apps/admin"
+        },
+        {
+            "path": "../apps/docs"
+        },
+        {
+            "path": "../packages/ui"
+        },
+        {
+            "path": "../packages/eslint-next-config"
+        },
+        {
+            "path": "../packages/jest-presets"
+        }
+    ],
+}

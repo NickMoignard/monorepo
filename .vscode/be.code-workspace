@@ -1,0 +1,28 @@
+{
+    "folders": [
+        {
+            "path": "../apps/admin"
+        },
+        {
+            "path": "../apps/docs"
+        },
+        {
+            "path": "../packages/jest-presets"
+        },
+        {
+            "path": "../packages/express-service-template"
+        },
+        {
+            "path": "../packages/logger"
+        },
+        {
+            "path": "../packages/nest-service-template"
+        },
+        {
+            "path": "../packages/express-service-template"
+        },
+        {
+            "path": "../packages/todo"
+        },
+    ],
+}

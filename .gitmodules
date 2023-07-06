@@ -1,0 +1,6 @@
+[submodule "packages/nest-service-template"]
+	path = packages/nest-service-template
+	url = git@github.com:NickMoignard/nest-service-template
+[submodule "packages/next-web-template"]
+	path = packages/next-web-template
+	url = git@github.com:NickMoignard/next-web-template.git
