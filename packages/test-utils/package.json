@@ -1,0 +1,14 @@
+{
+  "name": "test-utils",
+  "version": "0.0.0",
+  "private": true,
+  "scripts": {
+    "build": "turbo build"
+  },
+  "devDependencies": {
+    "@jest/globals": "^29.6.0",
+    "@nestjs/typeorm": "^10.0.0",
+    "jest-mock": "^29.6.0",
+    "typeorm": "^0.3.17"
+  }
+}
