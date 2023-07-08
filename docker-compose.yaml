@@ -1,6 +1,21 @@
 version: '3.8'
 services:
+  api:
+    container_name: api
+    image: monorepo-api:latest
+    env_file: ./packages/nest-service-template/.env
+    restart: always
+    ports:
+      - 11001:11001
+    depends_on:
+      - db
+    volumes:
+      - ./src:/app/src
+    links:
+      - db
+
   db:
+    container_name: db
     image: postgres:14.1-alpine
     restart: always
     environment:
@@ -12,21 +27,18 @@ services:
       - db:/var/lib/postgresql/data
 
   pgadmin:
-    links:
-      - db:db
     container_name: pgadmin
     image: dpage/pgadmin4
     ports:
       - "8080:80"
     volumes:
       - /data/pgadmin:/root/.pgadmin
-    networks:
-      - postgres
+    environment:
+      PGADMIN_DEFAULT_EMAIL: ${PGADMIN_DEFAULT_EMAIL}
+      PGADMIN_DEFAULT_PASSWORD: ${PGADMIN_DEFAULT_PASSWORD}
+    links:
+      - db
 
 volumes:
   db:
     driver: local
-
-networks:
-  postgres:
-    driver: bridge

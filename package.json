@@ -9,6 +9,7 @@
     "test": "turbo test"
   },
   "devDependencies": {
+    "@turbo/gen": "^1.10.7",
     "prettier": "^2.7.1",
     "turbo": "latest"
   },

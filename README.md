@@ -1,13 +1,13 @@
-# Turborepo kitchen sink starter
+# Moignstack example
 
-This is an official starter Turborepo with multiple meta-frameworks all working in harmony and sharing packages.
+This is a monorepo built with turborepo on pnpm.
 
-## Using this example
+## Create a BE service with
 
 Run the following command:
 
 ```sh
-npx create-turbo@latest -e kitchen-sink
+turbo gen workspace --type=app
 ```
 
 ## What's inside?
